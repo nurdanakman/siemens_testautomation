@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27279" started-at="2021-11-10T12:31:47Z" finished-at="2021-11-10T12:32:15Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.springframework.samples.petclinic.PetclinicTestRunner@475e586c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="27279" started-at="2021-11-10T12:31:47Z" finished-at="2021-11-10T12:32:15Z">
+      <class name="org.springframework.samples.petclinic.PetclinicTestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.springframework.samples.petclinic.PetclinicTestRunner@475e586c]" name="setUpClass" is-config="true" duration-ms="282" started-at="2021-11-10T12:31:47Z" finished-at="2021-11-10T12:31:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb0a000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.springframework.samples.petclinic.PetclinicTestRunner@475e586c]" name="runScenario" duration-ms="9163" started-at="2021-11-10T12:31:48Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-10T12:31:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add New Owner"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add Owner]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.springframework.samples.petclinic.PetclinicTestRunner@475e586c]" name="runScenario" duration-ms="8852" started-at="2021-11-10T12:31:57Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-10T12:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add New Pet"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Edit Pet]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.springframework.samples.petclinic.PetclinicTestRunner@475e586c]" name="runScenario" duration-ms="8956" started-at="2021-11-10T12:32:06Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-10T12:32:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit Just Added Owner"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Edit Owner]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.springframework.samples.petclinic.PetclinicTestRunner@475e586c]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2021-11-10T12:32:15Z" finished-at="2021-11-10T12:32:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.springframework.samples.petclinic.PetclinicTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

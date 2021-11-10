@@ -1,6 +1,8 @@
 package org.springframework.samples.petclinic;
 
+
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
@@ -65,7 +67,7 @@ public class FindOwnersSeleniumWebDriverTest {
 
 	@Test(description = "owner editlenebiliyor mu?", enabled = true, dependsOnMethods = { "addNewPet" })
 	public void editOwner() throws InterruptedException {
-		driver.navigate().back();
+		//driver.navigate().back();
 		driver.findElement(By.linkText("Edit Owner")).click();
 		driver.findElement(By.id("address")).clear();
 		driver.findElement(By.id("address")).sendKeys("Kagithane");
@@ -88,9 +90,11 @@ public class FindOwnersSeleniumWebDriverTest {
 		WebElement testDropDown1 = driver.findElement(By.id("type"));
 		Select dropdown = new Select(testDropDown1);
 		dropdown.selectByVisibleText("lizard");
+		
+		driver.findElement(By.xpath("/html/body/div/div/form/div[2]/div/button")).click();
 
-		WebElement ownerInfo = driver.findElement(By.xpath("/html/body/div/div/form/div[2]/div/button"));
-		assertTrue(ownerInfo.isDisplayed());
+		WebElement ownerInfo = driver.findElement(By.xpath("/html/body/div/div/table[2]/tbody"));
+		assertNotNull(ownerInfo);
 
 		System.out.println("Test12");
 	}
